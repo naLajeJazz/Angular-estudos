@@ -7,11 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Componente1Component implements OnInit {
 
-  public titulo="Eu vou vencer"
+  public titulo:string="Eu vou vencer"
 
   constructor() { }
 
   ngOnInit(): void {
+    
   }
 
 }
