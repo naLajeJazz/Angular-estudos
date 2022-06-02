@@ -1,13 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-componente1',
-  templateUrl: './componente1.component.html',
-  styleUrls: ['./componente1.component.css']
+  selector: 'app-jump-ball',
+  templateUrl: './jump-ball.component.html',
+  styleUrls: ['./jump-ball.component.css']
 })
-export class Componente1Component implements OnInit {
+export class JumpBallComponent implements OnInit {
 
-  public titulo:string="Clique na bolinha";
+  
   public jumpBall ="https://piskel-imgstore-b.appspot.com/img/c8ec5978-e2ac-11ec-bdbc-8d97f02f2eb1.gif"
   
 public muda=()=>{
@@ -17,10 +17,10 @@ setTimeout(()=>{this.jumpBall="https://piskel-imgstore-b.appspot.com/img/c8ec597
 
 }
 
+
   constructor() { }
 
   ngOnInit(): void {
-    
   }
 
 }
