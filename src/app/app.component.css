@@ -1,3 +1,6 @@
-.bm{
-    border: 1px solid red;
+.c{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
 }
