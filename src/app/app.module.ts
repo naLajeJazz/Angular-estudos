@@ -6,6 +6,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { Componente1Component } from './componente1/componente1.component';
 import { JumpBallComponent } from './jump-ball/jump-ball.component';
+import { HeaderComponent } from './header/header.component';
+import { ComponentNgClassComponent } from './component-ng-class/component-ng-class.component';
 
 
 @NgModule({
@@ -13,6 +15,8 @@ import { JumpBallComponent } from './jump-ball/jump-ball.component';
     AppComponent,
     Componente1Component,
     JumpBallComponent,
+    HeaderComponent,
+    ComponentNgClassComponent,
 
   ],
   imports: [

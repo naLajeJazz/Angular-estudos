@@ -6,20 +6,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./jump-ball.component.css']
 })
 export class JumpBallComponent implements OnInit {
+  
   public valor:Boolean=false
   public valor2:Boolean=true
-  public active=()=>{this.valor=true;this.valor2=false}
-  public disable=()=>{this.valor=false;this.valor2=true}
-  
-public jumpBall ="https://piskel-imgstore-b.appspot.com/img/c8ec5978-e2ac-11ec-bdbc-8d97f02f2eb1.gif"
+  public jumpBall ="https://piskel-imgstore-b.appspot.com/img/c8ec5978-e2ac-11ec-bdbc-8d97f02f2eb1.gif"
   
 public muda=()=>{
   this.jumpBall="https://piskel-imgstore-b.appspot.com/img/f8376a02-e2a6-11ec-b05e-8d97f02f2eb1.gif"
-
-setTimeout(()=>{this.jumpBall="https://piskel-imgstore-b.appspot.com/img/c8ec5978-e2ac-11ec-bdbc-8d97f02f2eb1.gif"},2250)
-
+  setTimeout(()=>{this.jumpBall="https://piskel-imgstore-b.appspot.com/img/c8ec5978-e2ac-11ec-bdbc-8d97f02f2eb1.gif"},2250)
 }
-
+public active=()=>{this.valor=true;this.valor2=false}
+public disable=()=>{this.valor=false;this.valor2=true}
 
   constructor() { }
 
