@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { first } from 'rxjs';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  
-}
+
+  public valor:Boolean=false
+  public valor2:Boolean=true
+  public active=()=>{this.valor=true;this.valor2=false}
+  public disable=()=>{this.valor=false;this.valor2=true}
+
+  }
+

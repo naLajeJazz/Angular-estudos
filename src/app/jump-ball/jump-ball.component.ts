@@ -6,7 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./jump-ball.component.css']
 })
 export class JumpBallComponent implements OnInit {
-
+  public valor:Boolean=false
+  public valor2:Boolean=true
+  public active=()=>{this.valor=true;this.valor2=false}
+  public disable=()=>{this.valor=false;this.valor2=true}
   
 public jumpBall ="https://piskel-imgstore-b.appspot.com/img/c8ec5978-e2ac-11ec-bdbc-8d97f02f2eb1.gif"
   

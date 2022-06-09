@@ -8,6 +8,10 @@ import { Component, OnInit } from '@angular/core';
 export class Componente1Component implements OnInit {
 
   public text:string="";
+  public valor:Boolean=false
+  public valor2:Boolean=true
+  public active=()=>{this.valor=true;this.valor2=false}
+  public disable=()=>{this.valor=false;this.valor2=true}
   
   constructor() { }
 

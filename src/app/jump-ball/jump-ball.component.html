@@ -1,11 +1,66 @@
-<div class="container ">
 
-        <div class=" row d-inline-flex justify-content-center ">
-            <img class="bmj" [src]="jumpBall" alt="" (click)="muda()">
+
+
+
+
+<div class="card shadow ">
+
+    <div class="card-title">
+        <h3 class=" text-center ">Property binding e Event binding</h3>
+    </div>
+
+    <div class="card-body ">
+        <div class="row">
+
+            <div class="col-6">
+                <div class="container ">
+
+                    <div class=" row d-inline-flex justify-content-center ">
+                        <img class="bmj" [src]="jumpBall" alt="" (click)="muda()">
+                    </div>
+                
+                    <div class="mb-5" >
+                        <span class="fs-5  text-danger">clique na bolinha</span>
+                    </div>
+                    
+            </div>
+            </div>
+            
+            <div class="col-6">
+                <ul class="list-group list-group   " [ngClass]="{'shadow': valor,'shadow-sm':valor2}" (mouseover)="active()" (mouseout)="disable()">
+                    <li class="list-group-item text-center">
+                        <a target="_blank" href="https://angular.io/guide/property-binding">Property binding Documentação link</a>
+                    </li>
+                    <li class="list-group-item text-center">
+                        <a target="_blank" href="https://angular.io/guide/event-binding">Event binding Documentação link</a>
+                    </li>
+                </ul>
+
+            </div>
         </div>
-    
-        <div class="mb-5" >
-            <span class="fs-5  text-danger">clique na bolinha</span>
-        </div>
-        
+    </div>
+
 </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
