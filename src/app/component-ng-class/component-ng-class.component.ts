@@ -9,8 +9,20 @@ export class ComponentNgClassComponent implements OnInit {
 
   public valor:Boolean=false
   public valor2:Boolean=true
+  public info:Boolean=false
+  public danger:Boolean=false
+  public warning:Boolean=false
+  public success:Boolean=false
   public active=()=>{this.valor=true;this.valor2=false}
   public disable=()=>{this.valor=false;this.valor2=true}
+  public infOver=()=>{this.info=true}
+  public infOut=()=>{this.info=false}
+  public dangOver=()=>{this.danger=true}
+  public dangOut=()=>{this.danger=false}
+  public warnOver=()=>{this.warning=true}
+  public warnOut=()=>{this.warning=false}
+  public succOver=()=>{this.success=true}
+  public succOut=()=>{this.success=false}
 
   constructor() { }
 

@@ -3,19 +3,19 @@
 
 
 
-<div class="card shadow mb-5" [ngClass]="{'bg-info': false, 'bg-danger': false, 'warning': false,'bg-success': false}">
+<div class="card shadow mb-5" [ngClass]="{'bg-info': info, 'bg-danger': danger, 'bg-warning': warning,'bg-success': success}">
 
     <div class="card-title">
         <h3 class=" text-center ">NgClass</h3>
     </div>
 
+    <span class="fs-5  text-dark ms-4">Passe o mouse sobre as cores</span>
     <div class="card-body row  ">
 <div class="col d-flex justify-content-around">
-
-    <div class="box bg-info"></div>
-    <div class="box bg-danger"></div>
-    <div class="box bg-warning"></div>
-    <div class="box bg-success"></div>
+    <div class="box bg-info" (mouseover)="infOver()" (mouseout)="infOut()"></div>
+    <div class="box bg-danger" (mouseover)="dangOver()" (mouseout)="dangOut()"></div>
+    <div class="box bg-warning" (mouseover)="warnOver()" (mouseout)="warnOut()"></div>
+    <div class="box bg-success" (mouseover)="succOver()" (mouseout)="succOut()"></div>
 </div>
         
    
