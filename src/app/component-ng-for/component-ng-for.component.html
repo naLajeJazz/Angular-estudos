@@ -1,28 +1,25 @@
 <div class="card  shadow my-2">
 
-    <div class="card-header" (click)="activeCard()" >
+    <div class="card-header" (click)="activeCard()">
+        
+        <h1 class=" my-auto">NgFor</h1>
+    
+    </div>
+
+    <div class=" card-body  " *ngIf="true">
+
+      
+<div class="d-flex justify-content-center">
+
+    <ul class="list-group">
+        <li class="list-group-item" *ngFor="let item of lista">{{item.nome}}</li>
+    </ul>
+    
+</div>
+            
         
 
-            <h1 class=" my-auto">NgFor</h1>
-    
-    </div>
-
-    <div class=" card-body  " *ngIf="card">
-
-       <div class="d-flex justify-content-around flex-wrap ">
-
-           <div class="box"></div>
-           <div class="box"></div>
-           <div class="box"></div>
-           <div class="box"></div>
-           
-       </div>
-
 
     </div>
-
-
-
-    
 
 </div>
