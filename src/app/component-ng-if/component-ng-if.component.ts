@@ -7,10 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ComponentNgIfComponent implements OnInit {
 
-  public valor:Boolean=false
-  public valor2:Boolean=true
-  public active=()=>{this.valor=true;this.valor2=false}
-  public disable=()=>{this.valor=false;this.valor2=true}
+  public valor:Boolean=false;
+  public valor2:Boolean=true;
+  public condition:boolean=false;
+
+  public conditionBol=()=>{if(!this.condition) {this.condition=true}else{this.condition=false}};
+  public active=()=>{this.valor=true;this.valor2=false};
+  public disable=()=>{this.valor=false;this.valor2=true};
 
   constructor() { }
 

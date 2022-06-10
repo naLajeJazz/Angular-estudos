@@ -6,28 +6,34 @@
 
     <div class=" card-body row ">
 
-        <div class="col-6 mx-auto d-block ">
+        <div class="col-10 mx-auto d-block "*ngIf="condition">
 
             <div class="d-flex justify-content-center    " >
                 <img class="logo"  src="https://www.vectorlogo.zone/logos/angular/angular-ar21.svg" alt="">
             </div>
 
-            <div class="text-dark fs-5 p-3 ">
+            <div class="text-dark fs-5 p-3 " >
                 Uma diretiva estrutural que inclui condicionalmente um modelo baseado no valor
                 de uma expressão coagida para Boolean. Quando a expressão é avaliada como 
                 verdadeira, o Angular renderiza o modelo fornecido em uma thencláusula e,
                 quando falso ou nulo, o Angular renderiza o modelo fornecido em uma elsecláusula opcional.
                 O modelo padrão para a elsecláusula está em branco.
+                <br>
+                <br>
+                Uma forma abreviada da diretiva, , é geralmente usada,
+                 fornecida como um atributo do elemento âncora para o modelo inserido.
+                  Angular expande isso para uma versão mais explícita, na qual o elemento
+                   âncora está contido em um elemento.*ngIf="condition"
             </div>
             
-            <div class="d-flex justify-content-center mt-4 ">
-                <button class="btn btn-info">Clique aqui</button>
-            </div>
+            
+        </div>
         
+        <div class="d-flex justify-content-center mt-4 ">
+            <button class="btn btn-info" (click)="conditionBol()">Clique aqui e veja como funciona o NgIf</button>
         </div>
 
-
-        <div class="row my-3">
+        <div class="row my-3 mt-5">
             <div class=" d-inline-flex justify-content-center">
 
                 <ul class="list-group list-group " [ngClass]="{'shadow': valor,'shadow-sm':valor2}" (mouseover)="active()" (mouseout)="disable()">
