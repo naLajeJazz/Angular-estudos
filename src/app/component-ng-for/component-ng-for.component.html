@@ -1,4 +1,4 @@
-<div class="card  shadow my-2">
+<div class="card  shadow my-2 ">
 
     <div class="card-header" (click)="activeCard()">
         
@@ -12,11 +12,16 @@
 <div class="d-flex justify-content-center">
 
     <ul class="list-group">
-        <li class="list-group-item" *ngFor="let item of lista">{{item.nome}}</li>
+        <li class="list-group-item fs-5 p-3" *ngFor="let item of lista">{{item.nome}}-preço:{{item.valor}}</li>
     </ul>
+
     
 </div>
-            
+
+<div class="d-flex justify-content-center my-3">
+    <button class="btn btn-primary " (click)="add()" >add elementos</button>
+
+</div>
         
 
 
