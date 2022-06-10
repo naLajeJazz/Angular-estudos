@@ -1,10 +1,12 @@
-<div class="card p-3 shadow my-5">
+<div class="card shadow my-2">
 
-    <div class="card-title">
-        <h1 class=" text-center ">Property binding e Event binding</h1>
+    <div class="card-header"(click)="activeCard()">
+      
+        <h1 class=" my-auto p-2 ">Property binding e Event binding</h1> 
+     
     </div>
 
-    <div class="card-body ">
+    <div class="card-body "*ngIf="card">
         <div class="row my-4 ">
 
             <div class="col-3  d-inline-flex justify-content-center">

@@ -1,10 +1,13 @@
-<div class="card p-3 shadow ">
+<div class="card shadow ">
 
-    <div class="card-title">
-        <h1 class=" text-center ">NgIf</h1>
+    <div class="card-header" (click)="activeCard()">
+        
+            <h1 class=" my-auto p-2 ">NgIf</h1>
+
+        
     </div>
 
-    <div class=" card-body row ">
+    <div class=" card-body row " *ngIf="card" >
 
         <div class="col-10 mx-auto d-block "*ngIf="condition">
 

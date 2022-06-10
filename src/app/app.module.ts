@@ -10,6 +10,7 @@ import { HeaderComponent } from './header/header.component';
 import { ComponentNgClassComponent } from './component-ng-class/component-ng-class.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ComponentNgIfComponent } from './component-ng-if/component-ng-if.component';
+import { ComponentNgForComponent } from './component-ng-for/component-ng-for.component';
 
 
 
@@ -21,6 +22,7 @@ import { ComponentNgIfComponent } from './component-ng-if/component-ng-if.compon
     HeaderComponent,
     ComponentNgClassComponent,
     ComponentNgIfComponent,
+    ComponentNgForComponent,
     
 
   ],

@@ -13,6 +13,9 @@ export class ComponentNgClassComponent implements OnInit {
   public danger:Boolean=false
   public warning:Boolean=false
   public success:Boolean=false
+  public card:Boolean=false;
+  
+  public activeCard=()=>{if(!this.card){this.card=true}else{this.card=false}}
   public active=()=>{this.valor=true;this.valor2=false}
   public disable=()=>{this.valor=false;this.valor2=true}
   public infOver=()=>{this.info=true}

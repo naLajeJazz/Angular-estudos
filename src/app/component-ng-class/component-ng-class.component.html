@@ -1,31 +1,38 @@
-<div class="card p-3 shadow my-5" [ngClass]="{'bg-info': info, 'bg-danger': danger, 'bg-warning': warning,'bg-success': success}">
+<div class="card  shadow my-2" [ngClass]="{'bg-info': info, 'bg-danger': danger, 'bg-warning': warning,'bg-success': success}">
 
-    <div class="card-title">
-        <h1 class=" text-center ">NgClass</h1>
+    <div class="card-header" (click)="activeCard()">
+        <h1 class=" my-auto p-2 ">NgClass</h1>
     </div>
-        <div class="row my-3">
 
-            <span class="fs-5  text-dark ms-4">Passe o mouse sobre as cores</span>
-            <div class="card-body col-4   ">
-                        <div class=" mt-5 d-flex justify-content-around">
-                            <div class="box bg-info shadow" (mouseover)="infOver()" (mouseout)="infOut()"></div>
-                            <div class="box bg-danger shadow" (mouseover)="dangOver()" (mouseout)="dangOut()"></div>
-                            <div class="box bg-warning shadow" (mouseover)="warnOver()" (mouseout)="warnOut()"></div>
-                            <div class="box bg-success shadow" (mouseover)="succOver()" (mouseout)="succOut()"></div>
-                        </div>
+    <div class="card-body    " *ngIf="card" >
+        <div class="row my-3"   >
+
+            <div class="col">
+
+                <span class="fs-5  text-dark ms-4">Passe o mouse sobre as cores</span>
+    
+                            <div class=" mt-5 d-flex justify-content-around">
+                                <div class="box bg-info shadow" (mouseover)="infOver()" (mouseout)="infOut()"></div>
+                                <div class="box bg-danger shadow" (mouseover)="dangOver()" (mouseout)="dangOut()"></div>
+                                <div class="box bg-warning shadow" (mouseover)="warnOver()" (mouseout)="warnOut()"></div>
+                                <div class="box bg-success shadow" (mouseover)="succOver()" (mouseout)="succOut()"></div>
+                            </div>
             </div>
+
+            
+            
+            <div class="col-8 text-dark fs-5 p-4">
+                As classes CSS são atualizadas da seguinte forma, dependendo do tipo de avaliação da expressão:
                 
-        <div class="col-8 text-dark fs-5 p-4">
-            As classes CSS são atualizadas da seguinte forma, dependendo do tipo de avaliação da expressão:
-
-string- as classes CSS listadas na string (delimitada por espaço) são adicionadas,
-Array- as classes CSS declaradas como elementos Array são adicionadas,
-Object- chaves são classes CSS que são adicionadas quando a expressão fornecida no valor é avaliada como um valor verdadeiro, caso contrário, elas são removidas.
+                string- as classes CSS listadas na string (delimitada por espaço) são adicionadas,
+                Array- as classes CSS declaradas como elementos Array são adicionadas,
+                Object- chaves são classes CSS que são adicionadas quando a expressão fornecida no valor é avaliada como um valor verdadeiro, caso contrário, elas são removidas.
+            </div>
+            
+            
+            
         </div>
-
-        </div>
-
-
+            
         <div class="row my-3">
             <div class=" d-inline-flex justify-content-center">
 

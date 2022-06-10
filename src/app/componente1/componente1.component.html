@@ -1,13 +1,13 @@
 
 
-<div class="card p-3 shadow ">
+<div class="card  shadow ">
 
-    <div class="card-title">
-        <h1 class=" text-center ">Two way binding</h1>
+    <div class="card-header" (click)="activeCard()">
+        <h1 class=" my-auto p-2 ">Two way binding</h1>
     </div>
 
     
-    <div class="card-body ">
+    <div class="card-body " *ngIf="card" >
         <div class="row">
 
             <div class="col-4 ">
