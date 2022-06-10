@@ -8,6 +8,9 @@ import { Componente1Component } from './componente1/componente1.component';
 import { JumpBallComponent } from './jump-ball/jump-ball.component';
 import { HeaderComponent } from './header/header.component';
 import { ComponentNgClassComponent } from './component-ng-class/component-ng-class.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ComponentNgIfComponent } from './component-ng-if/component-ng-if.component';
+
 
 
 @NgModule({
@@ -17,12 +20,16 @@ import { ComponentNgClassComponent } from './component-ng-class/component-ng-cla
     JumpBallComponent,
     HeaderComponent,
     ComponentNgClassComponent,
+    ComponentNgIfComponent,
+    
 
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    BrowserAnimationsModule,
+  
   ],
   providers: [],
   bootstrap: [AppComponent]

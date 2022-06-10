@@ -1,59 +1,50 @@
 
 
-<div class="card shadow ">
+<div class="card p-3 shadow ">
 
     <div class="card-title">
-        <h3 class=" text-center ">Two way binding</h3>
+        <h1 class=" text-center ">Two way binding</h1>
     </div>
 
     
     <div class="card-body ">
         <div class="row">
 
-            <div class="col ">
+            <div class="col-4 ">
                 <div class="container ">
     
                     <div class="row my-4">
                         <h5 class=" text-danger fs-2 text-center">{{text}}</h5>
                     </div>
                     
-                    <div class="row ">
-                        <input class="text-center shadow p-2 " placeholder="escreva algo" [(ngModel)]="text">
+                    <div class="row d-block mx-2 ">
+                        <input class="text-center  p-2 " placeholder="escreva algo" [(ngModel)]="text">
                     </div>
                 
                 
                 </div>
             </div>
 
-            <div class="col">
-                <ul class="list-group list-group " [ngClass]="{'shadow': valor,'shadow-sm':valor2}" (mouseover)="active()" (mouseout)="disable()">
-                    <li class="list-group-item text-center">
-                        <a target="_blank" href="https://angular.io/guide/two-way-binding">Two way binding Documentação link</a>
-                    </li>
-                </ul>
-        
-            </div>
-        </div>
+            <div class="col-8  p-3 text-dark fs-5 ">
+                A associação bidirecional oferece aos componentes
+                em seu aplicativo uma maneira de 
+                compartilhar dados. Use a associação bidirecional
+                para ouvir eventos e atualizar valores simultaneamente 
+                entre componentes pai e filho.
+                </div>
+
+<div class="row my-5">
+
+    <div class="col d-inline-flex justify-content-center">
+        <ul class="list-group list-group " [ngClass]="{'shadow': valor,'shadow-sm':valor2}" (mouseover)="active()" (mouseout)="disable()">
+            <li class="list-group-item text-center">
+                <a target="_blank" href="https://angular.io/guide/two-way-binding">Two way binding Documentação link</a>
+            </li>
+        </ul>
+
     </div>
 </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
+        </div>
+    </div>
+</div>

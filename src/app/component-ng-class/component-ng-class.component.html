@@ -1,32 +1,42 @@
-
-
-
-
-
-<div class="card shadow mb-5" [ngClass]="{'bg-info': info, 'bg-danger': danger, 'bg-warning': warning,'bg-success': success}">
+<div class="card p-3 shadow mb-5" [ngClass]="{'bg-info': info, 'bg-danger': danger, 'bg-warning': warning,'bg-success': success}">
 
     <div class="card-title">
-        <h3 class=" text-center ">NgClass</h3>
+        <h1 class=" text-center ">NgClass</h1>
     </div>
+        <div class="row my-3">
 
-    <span class="fs-5  text-dark ms-4">Passe o mouse sobre as cores</span>
-    <div class="card-body row  ">
-<div class="col d-flex justify-content-around">
-    <div class="box bg-info" (mouseover)="infOver()" (mouseout)="infOut()"></div>
-    <div class="box bg-danger" (mouseover)="dangOver()" (mouseout)="dangOut()"></div>
-    <div class="box bg-warning" (mouseover)="warnOver()" (mouseout)="warnOut()"></div>
-    <div class="box bg-success" (mouseover)="succOver()" (mouseout)="succOut()"></div>
-</div>
-        
-   
-    <div class="col">
-        <ul class="list-group list-group " [ngClass]="{'shadow': valor,'shadow-sm':valor2}" (mouseover)="active()" (mouseout)="disable()">
-            <li class="list-group-item text-center">
-                <a target="_blank" href="https://angular.io/api/common/NgClass#description">NgClass Documentação link</a>
-            </li>
-        </ul>
+            <span class="fs-5  text-dark ms-4">Passe o mouse sobre as cores</span>
+            <div class="card-body col-4   ">
+                        <div class=" mt-5 d-flex justify-content-around">
+                            <div class="box bg-info" (mouseover)="infOver()" (mouseout)="infOut()"></div>
+                            <div class="box bg-danger" (mouseover)="dangOver()" (mouseout)="dangOut()"></div>
+                            <div class="box bg-warning" (mouseover)="warnOver()" (mouseout)="warnOut()"></div>
+                            <div class="box bg-success" (mouseover)="succOver()" (mouseout)="succOut()"></div>
+                        </div>
+            </div>
+                
+        <div class="col-8 text-dark fs-5 p-4">
+            As classes CSS são atualizadas da seguinte forma, dependendo do tipo de avaliação da expressão:
 
-    </div>
+string- as classes CSS listadas na string (delimitada por espaço) são adicionadas,
+Array- as classes CSS declaradas como elementos Array são adicionadas,
+Object- chaves são classes CSS que são adicionadas quando a expressão fornecida no valor é avaliada como um valor verdadeiro, caso contrário, elas são removidas.
+        </div>
+
+        </div>
+
+
+        <div class="row my-3">
+            <div class=" d-inline-flex justify-content-center">
+
+                <ul class="list-group list-group " [ngClass]="{'shadow': valor,'shadow-sm':valor2}" (mouseover)="active()" (mouseout)="disable()">
+                    <li class="list-group-item text-center">
+                        <a target="_blank" href="https://angular.io/api/common/NgClass#description">NgClass Documentação link</a>
+                    </li>
+                </ul>
+            </div>
+
+
 </div>
 </div>
 
