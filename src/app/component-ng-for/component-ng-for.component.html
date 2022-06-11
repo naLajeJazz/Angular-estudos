@@ -6,13 +6,17 @@
     
     </div>
 
-    <div class=" card-body  " *ngIf="true">
+    <div class=" card-body  " *ngIf="card">
 
       
 <div class="d-flex justify-content-center">
 
     <ul class="list-group">
-        <li class="list-group-item fs-5 p-3" *ngFor="let item of lista">{{item.nome}}-preço:{{item.valor}}</li>
+        <li class="list-group-item fs-5 p-3" *ngFor="let item of lista;let i=index" (click)="eventAdd(i)" >
+           
+        [{{i}}]    {{item.nome}}-preço:{{item.valor}}
+            
+        </li>
     </ul>
 
     
